@@ -183,7 +183,7 @@ const Group = () => {
             alignItems={"center"}
             justifyContent={"center"}
             spacing={"1rem"}
-            padding={"3rem"}
+            padding={"2rem"}
         >
             {isEdit ?
                 (<>
@@ -219,6 +219,9 @@ const Group = () => {
                 xs: "0",
                 sm: "1rem",
                 md: "1rem 4rem"
+            }}
+            m={{
+                xs: "1rem 0rem"
             }}
         >
             <Button
@@ -269,6 +272,7 @@ const Group = () => {
                         position: "relative",
                         padding: "1rem 3rem"
                     }}
+                    xs={12}
                 >
                     {IconBtns}
                     {groupName && <>

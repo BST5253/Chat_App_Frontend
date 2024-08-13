@@ -24,7 +24,7 @@ const UserItem = ({ user, handler, handlerIsLoading, isAdded = false, styling = 
                         WebkitLineClamp: 1,
                         WebkitBoxOrient: "vertical",
                         overflow: "hidden",
-                        textOverflow: "ellipsis"
+                        textOverflow: "ellipsis",
                     }}
                 >
                     {name}
@@ -42,7 +42,7 @@ const UserItem = ({ user, handler, handlerIsLoading, isAdded = false, styling = 
                     onClick={() => handler(_id)}
                     disabled={handlerIsLoading}
                 >
-                    {isAdded ? <RemoveIcon /> : <AddIcon />}
+                    {isAdded ? <RemoveIcon fontSize='10px' /> : <AddIcon fontSize='10px' />}
                 </IconButton>
             </Stack>
         </ListItem>

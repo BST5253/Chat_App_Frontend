@@ -86,6 +86,7 @@ const NotificationItem = memo(({ sender, _id, handler }) => {
                         WebkitBoxOrient: "vertical",
                         overflow: "hidden",
                         textOverflow: "ellipsis",
+                        // textWrap: "wrap",
                         width: "100%",
                     }}
                 >
