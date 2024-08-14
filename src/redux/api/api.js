@@ -12,6 +12,7 @@ const api = createApi({
                 credentials: "include",
             }),
             providesTags: ["Chat"],
+            keepUnusedDataFor: 0
         }),
         searchUser: builder.query({
             query: (name) => ({
