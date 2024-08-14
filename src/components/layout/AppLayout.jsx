@@ -39,6 +39,11 @@ const AppLayout = () => (WrappedComponent) => {
             getOrSaveFromLocalStorage({ key: NEW_MESSAGE_ALERT, value: newMessagesAlert });
         }, [newMessagesAlert]);
 
+        useEffect(() => {
+            if (user) {
+                refetch();
+            }
+        }, [user]);
 
 
         const handleDeleteChat = (e, chatId, groupChat) => {
