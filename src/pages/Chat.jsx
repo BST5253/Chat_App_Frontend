@@ -181,7 +181,8 @@ const Chat = ({ chatId, user }) => {
                     height={"100%"}
                     padding={"1rem"}
                     alignItems={"center"}
-                    position={"relative"}
+                    position={"sticky"}
+                    bottom={0}
                 >
                     <IconButton
                         sx={{
