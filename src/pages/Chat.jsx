@@ -18,11 +18,10 @@ import { setIsFileMenu } from '../redux/reducers/misc';
 import { getSocket } from '../socket';
 
 const Chat = ({ chatId, user }) => {
-    const containerRef = useRef(null);
     const socket = getSocket();
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([]);
     const [page, setPage] = useState(1);
@@ -30,6 +29,7 @@ const Chat = ({ chatId, user }) => {
     const [IamTyping, setIamTyping] = useState(false);
     const [userTyping, setUserTyping] = useState(false);
     const typingTimeout = useRef(null);
+    const containerRef = useRef(null);
     const bottomRef = useRef(null);
 
 
